@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,21 +6,42 @@
 }
 
 body {
-  background-color: purple;
+  background: linear-gradient(45deg, #4158d0, #c850c0);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  color: #212529;
 }
 
 .table_container {
   width: 1200px;
   margin: 0 auto;
   max-width: 100%;
+  height: 100vh;
 }
 
+.table {
+  margin-top: 100px;
+  border-radius: 30px;
+  border-collapse: collapse;
+  background: #fff;
+}
 .table_header {
   text-align: center;
 }
 
 table tbody tr {
   height: 50px;
+}
+
+table thead tr td:first-child {
+  padding-left: 30px;
+  border-top-left-radius: 30px;
+}
+
+table thead tr td:last-child {
+  border-top-right-radius: 30px;
 }
 
 tbody tr {
@@ -30,22 +52,29 @@ tbody tr {
   font-weight: unset;
 }
 
-.column1 {
-  width: 260px;
-  padding-left: 40px;
+.column1,
+.column2 {
+  width: 60px;
+  text-align: center;
 }
 
-.column2 {
-  width: 160px;
+.column1 {
+  padding-left: 30px;
 }
 
 .column3 {
   width: 245px;
+  padding-left: 5px;
 }
 
 .column4 {
   width: 110px;
-  text-align: right;
+  text-align: center;
+}
+
+.column5 {
+  text-align: left;
+  padding: 10px;
 }
 
 .table_header th {
@@ -61,10 +90,11 @@ tbody tr:nth-child(even) {
 }
 
 tbody tr:nth-child(odd) {
-  background-color: orange;
+  background-color: rgba(223, 223, 223, 0.9529411765);
 }
 
 tbody tr {
+  color: #999;
   font-family: OpenSans-Regular;
   font-size: 15px;
   color: gray;
@@ -78,4 +108,17 @@ tr {
   height: 60px;
   background: #36304a;
   color: white;
+}
+
+.btn,
+.btn2 {
+  display: block;
+  font-size: 24px;
+  padding: 12px;
+  width: 200px;
+  margin: 50px auto;
+  background-color: #36304a;
+  border-radius: 12px;
+  color: white;
+  border-color: blueviolet;
 }/*# sourceMappingURL=style.css.map */
